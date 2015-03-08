@@ -4,7 +4,7 @@ from openerp.osv import osv, fields
 import openerp.addons.decimal_precision
 from openerp.tools.translate import _
 import logging
- 
+
 
 class pos_order(osv.osv):
     _inherit = 'pos.order'
@@ -50,11 +50,11 @@ class pos_order(osv.osv):
             result['value']['location_id'] = session_record.config_id.stock_location_id.id
 
         return result
- 
+
 
 pos_order()
 
-        
+
 
 class sbg_pos_order_line(osv.osv):
     _inherit = 'pos.order.line'
@@ -190,7 +190,7 @@ class sbg_pos_order_line(osv.osv):
 
 
         return result
- 
+
 
 sbg_pos_order_line()
 
@@ -239,4 +239,4 @@ class sbg_pos_session(osv.osv):
         return True
 
 sbg_pos_session()
- 
+
