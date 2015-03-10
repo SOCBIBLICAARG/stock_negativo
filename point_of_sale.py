@@ -33,10 +33,7 @@ class pos_order(osv.osv):
         'location_id': _default_location,
     }
 
-    def sbg_onchange_session(self, cr, uid, ids, session_id, context=None):
-
-        logging.warn('----')
-
+    def onchange_session_id(self, cr, uid, ids, session_id, context=None):
         result = {}
         if not session_id:
             return result

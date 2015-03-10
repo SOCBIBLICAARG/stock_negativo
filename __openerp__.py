@@ -25,7 +25,7 @@
 'name' : "Stock Negativo",
 'category' : "Test",
 'version' : "1.0",
-'depends' : ['base','point_of_sale'],
+    'depends' : ['point_of_sale','sba_sales'],
 'author' : "Miguel Chuga",
 'description' : """\
 Desarrollo personalizado para control del stock negativo en el puno de venta:
